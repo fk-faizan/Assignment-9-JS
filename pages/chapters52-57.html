@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="libraries/bootstrap-4.4.1/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+</head>
+<style>
+    body {
+        background-color: #040926;
+        color: #fff;
+    }
+
+    .container img {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .modal-dialog {
+        min-height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    @media(max-width: 768px) {
+        .modal-dialog {
+            min-height: calc(100vh - 20px);
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">JavaScript</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assignment-5.html">Assignment 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assignment-6.html">Assignment 6</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Assignement 9
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./chapters38-42.html">Ch # 38 - 42</a>
+                            <a class="dropdown-item" href="./chapters43-48.html">Ch # 43 - 48</a>
+                            <a class="dropdown-item" href="./chapters49-52.html">Ch # 49 - 52</a>
+                            <a class="dropdown-item active" href="./chapters52-57.html">Ch # 52 - 57</a>
+                            <a class="dropdown-item" href="./chapters58-67.html">Ch # 58 - 67</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="heading text-center mt-4 mb-5">
+        <h2><u>JavaScript Assignment Chapter 52 - 57 </u></h2>
+    </div>
+
+    <div class="container">
+        <div class="row text-center text-lg-left">
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/3.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/4.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/6.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/7.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/8.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/9.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/10.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/11.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/12.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/13.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/14.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100" onclick="showImage(this)" data-toggle="modal" data-target="#imageGalleryModal">
+                    <img class="img-fluid img-thumbnail" src="./../images/15.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageGalleryModal" tabindex="p-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img class="img-fluid" id="modalImage" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="libraries/bootstrap-4.4.1/js/bootstrap.js"></script> -->
+<script src="./../js/chapters52-57.js"></script>
+
+</html>

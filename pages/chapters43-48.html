@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="libraries/bootstrap-4.4.1/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+</head>
+<style>
+    body {
+        background-color: #040926;
+        color: #fff;
+    }
+
+    .shop {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mbl {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .mbl img {
+        width: 180px;
+        height: 180px;
+        border: 1px solid blue;
+        padding: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+      }
+      table tr td {
+        border: 1px solid gainsboro;
+        padding: 10px;
+      }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JavaScript</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./assignment-5.html">Assignment 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./assignment-6.html">Assignment 6</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Assignement 9
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./chapters38-42.html">Ch # 38 - 42</a>
+                        <a class="dropdown-item active" href="./chapters43-48.html">Ch # 43 - 48</a>
+                        <a class="dropdown-item" href="./chapters49-52.html">Ch # 49 - 52</a>
+                        <a class="dropdown-item" href="./chapters52-57.html">Ch # 52 - 57</a>
+                        <a class="dropdown-item" href="./chapters58-67.html">Ch # 58 - 67</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    
+    <div class="heading d-flex justify-content-center mt-4">
+        <h2><u>JavaScript Assignment Chapter 43 - 48 </u></h2>
+    </div>
+    
+    <div id="javaScript">
+        <!-- Task 1 -->
+        <div style="border-bottom: 2px solid red;" class="task1 ml-4 pb-4">
+            <!-- <h4>1. Show an alert box on click on a link.</h4> -->
+            <a href="#" onclick="task1()">Click here...</a>
+        </div>
+        
+        <!-- Task 2 -->
+        <div style="border-bottom: 2px solid red;" class="task2 ml-4 mt-4 pb-4">
+            <h3 style="color: blue;"> Mobile Phone lookup </h3>
+            <div class="shop">
+                <div class="mbl" onclick="task2()">
+                    <img src="./../images/mbl1.png" onclick="showTheMessage()" alt="oppo">
+                    <p class="text"> Oppo </p>
+                </div>
+                
+                <div class="mbl" onclick="task2()">
+                    <img src="./../images/mbl2.png" onclick="showTheMessage()" alt="samsung">
+                    <p class="text"> Samsung</p>
+                </div>
+                
+                <div class="mbl" onclick="task2()">
+                    <img src="./../images/mbl3.png" onclick="showTheMessage()" alt="iphone">
+                    <p class="text"> Iphone </p>
+                </div>
+                
+                <div class="mbl" onclick="task2()">
+                    <img src="./../images/mbl4.png" onclick="showTheMessage()" alt="Huawei">
+                    <p class="text"> Huawei</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Task 3 -->
+        <div style="border-bottom: 2px solid red;" id="task3" class="task3 ml-4 mt-4 pb-4"></div>
+        
+        <!-- Task 4 -->
+        <div style="border-bottom: 2px solid red;" class="task4 ml-4 mt-4 pb-4">
+            <img id="image" onmouseover="changePic('image','./../images/mbl4.png')" onmouseout="changePic('image','./../images/mbl3.png')" src="./../images/mbl3.png" height="250px" width="250px">
+        </div>
+        
+        <!-- Task 5 -->
+        <div style="border-bottom: 2px solid red;" class="task5 ml-4 mt-4 pb-4">
+            <div style="border: 1px solid gray; width: 180px; height: 45px;" id="counter" class="counter d-flex align-items-center justify-content-center mb-2"></div>
+            <button class="btn btn-warning" onclick="increase()">Increase</button>
+            <button class="btn btn-danger" onclick="decrease()">Decrease</button>
+        </div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="libraries/bootstrap-4.4.1/js/bootstrap.js"></script> -->
+<script src="./../js/chapters43-48.js"></script>
+
+</html>
